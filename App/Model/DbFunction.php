@@ -204,8 +204,8 @@
 	 {
 	    $db = Database::getInstance();
 			$mysqli = $db->getConnection();
-			//echo $cshort.$cfull.$udate.$id;exit;
-			$query = "update tbl_course set cshort=?,cfull=? ,update_date=? where cid=?";
+
+			$query = "UPDATE tbl_course set cshort=?,cfull=? ,update_date=? where cid=?";
 			$stmt= $mysqli->prepare($query);
 			$stmt->bind_param('sssi',$cshort,$cfull,$udate,$id);
 			$stmt->execute();
@@ -217,7 +217,7 @@
 	{
 	    $db = Database::getInstance();
 			$mysqli = $db->getConnection();
-			$query = "update subject set sub1=?,sub2=? ,sub3=?,update_date=? where subid=?";
+			$query = "UPDATE subject set sub1=?,sub2=? ,sub3=?,update_date=? where subid=?";
 			$stmt= $mysqli->prepare($query);
 			$stmt->bind_param('ssssi',$sub1,$sub2,$sub3,$udate,$id);
 			$stmt->execute();
@@ -268,7 +268,7 @@
 	{
 	    $db = Database::getInstance();
 	    $mysqli = $db->getConnection();
-	    $query="delete from tbl_course where cid=?";
+	    $query="DELETE from tbl_course where cid=?";
 	    $stmt= $mysqli->prepare($query);
 	    $stmt->bind_param('s',$id);
 		$stmt->execute();
@@ -280,7 +280,7 @@
 
 	   	$db = Database::getInstance();
 	    $mysqli = $db->getConnection();
-	    $query="delete from registration where id=?";
+	    $query="DELETE from registration where id=?";
 	    $stmt= $mysqli->prepare($query);
 	    $stmt->bind_param('i',$id);
 			$stmt->execute();
@@ -291,7 +291,7 @@
 	{
 	    $db = Database::getInstance();
 	    $mysqli = $db->getConnection();
-	    $query="delete from subject where subid=?";
+	    $query="DELETE from subject where subid=?";
 	    $stmt= $mysqli->prepare($query);
 	    $stmt->bind_param('i',$id);
 			$stmt->execute();
