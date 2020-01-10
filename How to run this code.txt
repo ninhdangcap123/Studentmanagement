@@ -4,7 +4,7 @@ Open Xampp or Wampp or Lamp
 
 Open PHP MyAdmin and import schoolmanagement.sql file
 
-Open Browser with the URL:http://localhost/studentmanagement2/index.php?Controller=Student&action=login
+Open Browser with the URL:http://localhost/index.php?Controller=Student&action=login
 
 Login Id : admin
 Password : admin
