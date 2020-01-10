@@ -1,8 +1,6 @@
 <?php
 
 include('App/Model/Subject/Subject_Model.php');
-
-
 $obj=new Subject_Model();
 if (isset($_GET['action']))
 {
@@ -17,7 +15,7 @@ switch ($action) {
     $rs=$obj->showCourse();
     $rs1=$obj->showCourse();
     if(isset($_POST['submit']))
-    {        
+    {
         $obj->create_subject($_POST['course-short'],$_POST['course-full'],$_POST['sub1'],$_POST['sub2'],$_POST['sub3']);
     }
     include "App/View/pages/Subject/add-subject.php";

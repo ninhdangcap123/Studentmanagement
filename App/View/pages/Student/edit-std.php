@@ -224,91 +224,91 @@
 		<div class="row">
 		<div class="col-lg-12">
 			<div class="panel panel-default">
-			<div class="panel-heading">Contact Informations</div>
-			<div class="panel-body">
-			<div class="row">
-			<div class="col-lg-12">
-			<div class="form-group">
-			<div class="col-lg-2">
-			<label>Mobile Number<span id="" style="font-size:11px;color:red">*</span>	</label>
-			</div>
-			<div class="col-lg-4">
-			<input class="form-control" type="number" name="mobno" required="required" maxlength="10"value="<?php echo htmlentities($res->mobno);?>">
-			</div>
-			<div class="col-lg-2">
-			<label>Email Id<span id="" style="font-size:11px;color:red">*</span></label>
-			</div>
-			<div class="col-lg-4">
-			<input class="form-control"  type="email" name="email" required="required"value="<?php echo htmlentities($res->emailid);?>">
-			</div>
-			</div>
-			<br><br>
-			<div class="form-group">
-			<div class="col-lg-2">
-			<label>Country<span id="" style="font-size:11px;color:red">*</span></label>
-			</div>
-			<div class="col-lg-4">
-			<select class="form-control" name="country" id="country" onchange="showState(this.value)"	required="required"  value="<?php echo htmlentities($res->country);?>">
-		  <option VALUE="">Select Country</option>
-			<?php
-			while($res3=$rs2->fetch_object())
-			{?>
-		  <option VALUE="<?php echo htmlentities($res3->id);?>"><?php echo htmlentities($res3->name)?></option><?php }?>
-		  </select>
-			</div>
-			<div class="col-lg-2">
-			<label>State<span id="" style="font-size:11px;color:red">*</span></label>
-			</div>
-			<div class="col-lg-4">
-		  <select name="state" id="state"  class="form-control" onchange="showDist(this.value)" required="required">
-		  <option value="">Select State</option>
-			<?php
-			while($res3=$rs3->fetch_object())
-			{?>
-		  <option VALUE="<?php echo htmlentities($res3->id);?>"><?php echo htmlentities($res3->name)?></option><?php }?>
-		  </select>
-			</div>
-			</div>
-			<br><br><br><br>
-		  <div class="form-group">
-			<div class="col-lg-2">
-			<label>City<span id="" style="font-size:11px;color:red">*</span>	</label>
-			</div>
-			<div class="col-lg-4">
-		  <select name="city" id="dist"  class="form-control" onchange="showDist(this.value)" >
-		  <option value="">Select City</option>
-			<?php while($res3=$rs4->fetch_object())
-			{?>
-		  <option VALUE="<?php echo htmlentities($res3->id);?>"><?php echo htmlentities($res3->name)?></option><?php }?>
-			</select>
-			</div>
-			<div class="col-lg-2">
-			<label>Permanent Address<span id="" style="font-size:11px;color:red">*</span></label>
-			</div>
-			<div class="col-lg-4">
-			<textarea class="form-control" rows="3" name="padd"><?php echo htmlentities($res->padd);?></textarea>
-			</div>
-			</div>
-			<br><br><br><br>
-			<br><br>
-			<div class="form-group">
-			<div class="col-lg-2">
-			<label>Correspondence Address<span id="" style="font-size:11px;color:red">*</span>
-			</label>
-			</div>
-			<div class="col-lg-4">
-		  <textarea class="form-control" rows="3" name="cadd"><?php echo htmlentities($res->cadd);?></textarea>
-			</div>
-			<div class="col-lg-2">
-			</div>
-			<div class="col-lg-4">
-			</div>
-			</div>
-			<br><br>
-			</div>
-			<br><br>
-			</div>
-		  </div>
+				<div class="panel-heading">Contact Informations</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="form-group">
+								<div class="col-lg-2">
+									<label>Mobile Number<span id="" style="font-size:11px;color:red">*</span>	</label>
+								</div>
+								<div class="col-lg-4">
+										<input class="form-control" type="number" name="mobno" required="required" maxlength="10"value="<?php echo htmlentities($res->mobno);?>">
+								</div>
+								<div class="col-lg-2">
+									<label>Email Id<span id="" style="font-size:11px;color:red">*</span></label>
+								</div>
+								<div class="col-lg-4">
+									<input class="form-control"  type="email" name="email" required="required"value="<?php echo htmlentities($res->emailid);?>">
+								</div>
+							</div>
+							<br><br>
+							<div class="form-group">
+								<div class="col-lg-2">
+									<label>Country<span id="" style="font-size:11px;color:red">*</span></label>
+								</div>
+								<div class="col-lg-4">
+									<select class="form-control" name="country" id="country" onchange="showState(this.value)"	required="required"  value="<?php echo htmlentities($res->country);?>">
+									  <option VALUE="">Select Country</option>
+											<?php
+											while($res3=$rs2->fetch_object())
+											{?>
+									  <option VALUE="<?php echo htmlentities($res3->id);?>"><?php echo htmlentities($res3->name)?></option><?php }?>
+								  </select>
+								</div>
+								<div class="col-lg-2">
+									<label>State<span id="" style="font-size:11px;color:red">*</span></label>
+								</div>
+								<div class="col-lg-4">
+								  <select name="state" id="state"  class="form-control" onchange="showDist(this.value)" required="required">
+									  <option value="">Select State</option>
+											<?php
+											while($res3=$rs3->fetch_object())
+											{?>
+									  <option VALUE="<?php echo htmlentities($res3->id);?>"><?php echo htmlentities($res3->name)?></option><?php }?>
+								  </select>
+								</div>
+							</div>
+							<br><br><br><br>
+						  <div class="form-group">
+								<div class="col-lg-2">
+									<label>City<span id="" style="font-size:11px;color:red">*</span>	</label>
+								</div>
+								<div class="col-lg-4">
+								  <select name="city" id="dist"  class="form-control" onchange="showDist(this.value)" >
+									  <option value="">Select City</option>
+											<?php while($res3=$rs4->fetch_object())
+											{?>
+									  <option VALUE="<?php echo htmlentities($res3->id);?>"><?php echo htmlentities($res3->name)?></option><?php }?>
+									</select>
+								</div>
+								<div class="col-lg-2">
+									<label>Permanent Address<span id="" style="font-size:11px;color:red">*</span></label>
+								</div>
+								<div class="col-lg-4">
+									<textarea class="form-control" rows="3" name="padd"><?php echo htmlentities($res->padd);?></textarea>
+								</div>
+							</div>
+							<br><br><br><br>
+							<br><br>
+							<div class="form-group">
+								<div class="col-lg-2">
+									<label>Correspondence Address<span id="" style="font-size:11px;color:red">*</span>
+									</label>
+								</div>
+								<div class="col-lg-4">
+							  	<textarea class="form-control" rows="3" name="cadd"><?php echo htmlentities($res->cadd);?></textarea>
+								</div>
+								<div class="col-lg-2">
+								</div>
+								<div class="col-lg-4">
+								</div>
+							</div>
+							<br><br>
+							</div>
+						<br><br>
+					</div>
+			  </div>
 			</div>
 		  <div class="row">
 			<div class="col-lg-12">

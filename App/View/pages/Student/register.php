@@ -33,49 +33,49 @@
 		</div>
 		<div class="row">
 		<div class="col-lg-12">
-		<div class="panel panel-default">
-		<div class="panel-heading">Register</div>
-		<div class="panel-body">
-		<div class="row">
-		<div class="col-lg-10">
-		<div class="form-group">
-		<div class="col-lg-4">
-		<label>Select Course<span id="" style="font-size:11px;color:red">*</span></label>
-		</div>
-		<div class="col-lg-6">
-	  <select class="form-control" name="course-short" id="cshort"  onchange="showSub(this.value)" required="required" >
-	  <option VALUE="">SELECT</option>
-		<?php while($res=$rs->fetch_object())
-		{?>
-	  <option VALUE="<?php echo htmlentities($res->cid);?>"><?php echo htmlentities($res->cshort)?></option><?php }?>
-		</select>
-		</div>
-		</div>
-		<br><br>
-		<div class="form-group">
-		<div class="col-lg-4">
-		<label>Select Subject<span id="" style="font-size:11px;color:red">*</span></label>
-		</div>
-		<div class="col-lg-6">
-	  <input class="form-control" name="c-full"  id="c-full" >
-	  </select>
-		</div>
-		</div>
-		<br><br>
-		<div class="form-group">
-		<div class="col-lg-4">
-		<label>Current Session<span id="" style="font-size:11px;color:red">*</span></label>
-		</div>
-		<div class="col-lg-6">
-		<input class="form-control" name="session" value="<?php echo htmlentities($res1->session);?>" readonly>
-		</div>
-		<br><br>
-		</div>
-		<br><br>
-		</div>
-		</div>
-		</div>
-		</div>
+			<div class="panel panel-default">
+				<div class="panel-heading">Register</div>
+				<div class="panel-body">
+					<div class="row">
+						<div class="col-lg-10">
+							<div class="form-group">
+								<div class="col-lg-4">
+									<label>Select Course<span id="" style="font-size:11px;color:red">*</span></label>
+								</div>
+								<div class="col-lg-6">
+								  <select class="form-control" name="course-short" id="cshort"  onchange="showSub(this.value)" required="required" >
+									  <option VALUE="">SELECT</option>
+											<?php while($res=$rs->fetch_object())
+											{?>
+									  <option VALUE="<?php echo htmlentities($res->cid);?>"><?php echo htmlentities($res->cshort)?></option><?php }?>
+									</select>
+								</div>
+							</div>
+							<br><br>
+							<div class="form-group">
+								<div class="col-lg-4">
+									<label>Select Subject<span id="" style="font-size:11px;color:red">*</span></label>
+									</div>
+									<div class="col-lg-6">
+								  	<input class="form-control" name="c-full"  id="c-full" >
+
+								</div>
+							</div>
+							<br><br>
+							<div class="form-group">
+								<div class="col-lg-4">
+									<label>Current Session<span id="" style="font-size:11px;color:red">*</span></label>
+								</div>
+								<div class="col-lg-6">
+									<input class="form-control" name="session" value="<?php echo htmlentities($res1->session);?>" readonly>
+								</div>
+								<br><br>
+							</div>
+							<br><br>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="row">
 		<div class="col-lg-12">
@@ -85,35 +85,35 @@
 		<div class="row">
 		<div class="col-lg-12">
 		<div class="form-group">
-		<div class="col-lg-2">
-		<label>First Name<span id="" style="font-size:11px;color:red">*</span>	</label>
-		</div>
-		<div class="col-lg-4">
-		<input class="form-control" name="fname" required="required" pattern="[A-Za-z]+$">
-		</div>
-		<div class="col-lg-2">
-		<label>Middle Name</label>
-		</div>
-		<div class="col-lg-4">
-		<input class="form-control" name="mname">
-		</div>
+			<div class="col-lg-2">
+				<label>First Name<span id="" style="font-size:11px;color:red">*</span>	</label>
+			</div>
+			<div class="col-lg-4">
+				<input class="form-control" name="fname" required="required" pattern="[A-Za-z]+$">
+			</div>
+			<div class="col-lg-2">
+				<label>Middle Name</label>
+			</div>
+			<div class="col-lg-4">
+				<input class="form-control" name="mname">
+			</div>
 		</div>
 		<br><br>
 		<div class="form-group">
-		<div class="col-lg-2">
-		<label>Last Name</label>
-		</div>
-		<div class="col-lg-4">
-		<input class="form-control" name="lname" pattern="[A-Za-z]+$">
-		</div>
-		<div class="col-lg-2">
-		<label>Gender</label>
-		</div>
-		<div class="col-lg-4">
-		<input type="radio" name="gender" id="male" value="Male"> &nbsp; Male &nbsp;
-		<input type="radio" name="gender" id="female" value="feale"> &nbsp; Female &nbsp;
-		<input type="radio" name="gender" id="other" value="other"> &nbsp; Other &nbsp;
-		</div>
+			<div class="col-lg-2">
+					<label>Last Name</label>
+				</div>
+				<div class="col-lg-4">
+					<input class="form-control" name="lname" pattern="[A-Za-z]+$">
+				</div>
+				<div class="col-lg-2">
+					<label>Gender</label>
+				</div>
+				<div class="col-lg-4">
+					<input type="radio" name="gender" id="male" value="Male"> &nbsp; Male &nbsp;
+					<input type="radio" name="gender" id="female" value="feale"> &nbsp; Female &nbsp;
+					<input type="radio" name="gender" id="other" value="other"> &nbsp; Other &nbsp;
+				</div>
 		</div>
 		<br><br>
 		<div class="form-group">
@@ -122,14 +122,14 @@
 
 				</div>
 				<div class="col-lg-4">
-				<input class="form-control" name="gname" required="required" pattern="[A-Za-z]+$">
+					<input class="form-control" name="gname" required="required" pattern="[A-Za-z]+$">
 				</div>
 				 <div class="col-lg-2">
 				<label>Occupation</label>
 
 				</div>
 				<div class="col-lg-4">
-				<input class="form-control" name="ocp" id="ocp">
+					<input class="form-control" name="ocp" id="ocp">
 				</div>
 				</div>
 				<br><br>
