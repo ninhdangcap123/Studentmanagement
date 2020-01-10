@@ -7,7 +7,7 @@ session_start();
  }
  else
  {
-  $controller = 'Student';
+  $controller = '';
  }
 
  switch ($controller)
