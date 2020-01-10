@@ -165,14 +165,14 @@
 			$stmt= $mysqli->query($query);
 			return $stmt;
 		}
-		function showStudents1($id)
-		{
-			$db = Database::getInstance();
-			$mysqli = $db->getConnection();
-			$query = "SELECT * FROM registration  where id='".$id."'";
-			$stmt= $mysqli->query($query);
-			return $stmt;
-		}
+		// function showStudents1($id)
+		// {
+		// 	$db = Database::getInstance();
+		// 	$mysqli = $db->getConnection();
+		// 	$query = "SELECT * FROM registration  where id='".$id."'";
+		// 	$stmt= $mysqli->query($query);
+		// 	return $stmt;
+		// }
 		function register($cshort,$cfull,$fname,$mname,$lname,$gender,$gname,$ocp,$income,$category,$ph,
 	                  $nation,$mobno,$email,$country,$state,$city,$padd,$cadd,$board1,$board2,$roll1,$roll2,
 					          $pyear1,$pyear2,$sub1,$sub2,$marks1,$marks2,$fmarks1,$fmarks2,$session)
@@ -285,8 +285,9 @@
 	    $stmt->bind_param('i',$id);
 			$stmt->execute();
 	    echo "<script>alert('One record has been deleted')</script>";
-	    echo "<script>window.location.href='index.php?Controller=Student&action=view'</script>";
+	    echo "<script>window.location.href='index.php?Controller=Subject&action=view-subject'</script>";
 	}
+
 	function del_subject($id)
 	{
 	    $db = Database::getInstance();

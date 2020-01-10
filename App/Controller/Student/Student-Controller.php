@@ -73,9 +73,10 @@
 
     case 'view':
       $rs=$obj->showstudents();
-      if(isset($_GET['del']))
+
+      if(isset($_GET['delstd']))
       {
-        $obj->del_std(intval($_GET['del']));
+        $obj->del_std(intval($_GET['delstd']));
       }
       include "App/View/pages/view.php";
       break;
