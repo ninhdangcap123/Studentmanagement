@@ -1,7 +1,5 @@
 	<?php
 	require('Database.php');
-	//$db = Database::getInstance();
-	//$mysqli = $db->getConnection();
 	class DbFunction
 	{
 		function login($loginid,$password)
@@ -287,7 +285,7 @@
 	    $stmt->bind_param('i',$id);
 			$stmt->execute();
 	    echo "<script>alert('One record has been deleted')</script>";
-	    echo "<script>window.location.href='index.php?Controller=Student&action=view-subject'</script>";
+	    echo "<script>window.location.href='index.php?Controller=Student&action=view'</script>";
 	}
 	function del_subject($id)
 	{
