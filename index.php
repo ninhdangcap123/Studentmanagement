@@ -7,21 +7,21 @@ session_start();
  }
  else
  {
-  $controller = '';
+  $controller = 'Student';
  }
 
  switch ($controller)
  {
       case 'Student':
-         include "App/Controller/Student/Student-Controller.php";
+         include "App/Controller/Student/Student_Controller.php";
          break;
 
       case 'Subject':
-          include "App/Controller/Subject/Subject-Controller.php";
+          include "App/Controller/Subject/Subject_Controller.php";
           break;
 
       case 'Course':
-        include "App/Controller/Course/Course-Controller.php";
+        include "App/Controller/Course/Course_Controller.php";
         break;
 
 
